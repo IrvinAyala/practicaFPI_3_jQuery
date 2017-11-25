@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box
+}
+
+.contenedor-datalist {
+    box-shadow: 1px 1px 20px 2px #ccc;
+    text-align: center;
+    border: 1px solid #ccc;
+    width: 300px;
+    height: 260px;
+    margin: 20px auto;
+    padding-top: 5px
+}
+
+.contenedor-jugadores {
+    /*box-shadow: 1px 1px 20px 2px #ccc;*/
+    /*text-align: center;*/
+    border: 1px solid #ccc;
+    width: 1000px;
+    /*height: 260px;*/
+    margin: 20px auto;
+    padding: 10px
+}
+
+div input {
+    padding: 10px;
+    /*margin: 15px 0;*/
+    border-radius: 15px;
+    /*font-weight: 700;*/
+    display: inline;
+    width: 90%
+}
+
+
+h3{
+    color: teal;
+
+}
+
+.jugadores{
+    display: inline-block;
+    margin: 10px;
+    box-shadow: 1px 1px 20px 2px #ccc;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+label{
+    font-weight: bold;
+}
