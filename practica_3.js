@@ -38,9 +38,9 @@ function captarIdLigas(e) {
 }
 
 function cargarEquipos() {
-    
+
     document.getElementById("equipos").removeAttribute("disabled");
-    
+
     $.ajax({
         headers: {'X-Auth-Token': 'df40f3f9eb674bc5acf47bf88f22345c'},
         url: 'http://api.football-data.org/v1/competitions/' + idLiga + '/teams',
@@ -58,8 +58,6 @@ function cargarEquipos() {
         creadorAutocompleteEquipos(listComplete3, listComplete4);
     });
 }
-
-
 
 
 function LlenarConEnterEquipos(e) {
@@ -98,9 +96,9 @@ function cargarJugadores() {
 
 
 function mostrar(JSON) {
-    
-     $(".contenedor-jugadores").html("");
-    
+
+    $(".contenedor-jugadores").html("");
+
     if (JSON.players[0] != null && JSON.players[0] != "undefined") {
         for (i = 0; i < JSON.players.length; i++) {
 
@@ -133,7 +131,7 @@ function limpiar() {
 //Para el autocompletado
 window.onload = function () {
 
-    document.getElementById("equipos").setAttribute("disabled",null);
+    document.getElementById("equipos").setAttribute("disabled", null);
 
     $.ajax({
         headers: {'X-Auth-Token': 'df40f3f9eb674bc5acf47bf88f22345c'},
@@ -173,4 +171,3 @@ function creadorAutocompleteEquipos(listComplete, listComplete2) {
         $("#lista2").append(node);
     }
 }
-
